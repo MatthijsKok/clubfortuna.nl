@@ -20,19 +20,19 @@
         box-sizing: border-box;
         margin: 0;
       }
-      html {
-        height: 100dvh;
-        width: 100dvw;
+      body {
+        block-size: 100dvh;
         background-color: var(--bg);
       }
-      body {
-        height: 100dvh;
-        width: 100dvw;
+      div {
+        block-size: 100dvh;
         padding: 1em;
         background-color: var(--logo);
         mask: url("/logo.svg") center / contain no-repeat content-box;
       }
     </style>
   </head>
-  <body></body>
+  <body>
+    <div />
+  </body>
 </html>
