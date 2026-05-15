@@ -1,0 +1,8 @@
+allowBuilds:
+  esbuild: true
+engineStrict: true
+minimumReleaseAge: 1440 # 1 day
+pmOnFail: download
+runtimeOnFail: download
+savePrefix: ""
+verifyDepsBeforeRun: install

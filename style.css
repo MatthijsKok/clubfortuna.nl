@@ -1,0 +1,29 @@
+:root {
+  --bg: #fff;
+  --logo: #000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #000;
+    --logo: #fff;
+  }
+}
+
+* {
+  overscroll-behavior: none;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  block-size: 100dvh;
+  background-color: var(--bg);
+}
+
+div {
+  block-size: 100dvh;
+  padding: 1em;
+  background-color: var(--logo);
+  mask: url("/logo.svg") center / contain no-repeat content-box;
+}
